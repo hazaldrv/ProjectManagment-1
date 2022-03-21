@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcademicianControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicianControl.Designer.cs">
+      <DependentUpon>AcademicianControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HumanSourceControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HumanSourceControl.Designer.cs">
+      <DependentUpon>HumanSourceControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentControl.Designer.cs">
+      <DependentUpon>StudentControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcademicianControl.resx">
+      <DependentUpon>AcademicianControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanSourceControl.resx">
+      <DependentUpon>HumanSourceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentControl.resx">
+      <DependentUpon>StudentControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

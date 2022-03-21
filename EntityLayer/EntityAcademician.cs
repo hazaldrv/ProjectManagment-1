@@ -8,14 +8,14 @@ namespace EntityLayer
 {
     public class EntityAcademician
     {
-        int _ID;
-        string _NAME;
-        string _DEPARTMAN;
-        string _POSITION;
-        string _PHONE;
-        string _EMAIL;
-        string _OFFICE;
-        string _TIMETABLE;
+       public int _ID;
+       public string _NAME;
+       public string _DEPARTMAN;
+       public string _POSITION;
+       public string _PHONE;
+       public string _EMAIL;
+       public string _OFFICE;
+       public string _TIMETABLE;
 
         public int ID { get => _ID; set => _ID = value; }
         public string NAME { get => _NAME; set => _NAME = value; }
