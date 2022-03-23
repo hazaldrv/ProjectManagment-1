@@ -14,6 +14,6 @@ namespace EntityLayer
 
         public int ID { get => _ID; set => _ID = value; }
         public string USERNAME { get => _USERNAME; set => _USERNAME = value; }
-        public string PASSWORD { get => PASSWORD; set => PASSWORD = value; }
+        public string PASSWORD { get => _PASSWORD; set => _PASSWORD = value; }
     }
 }

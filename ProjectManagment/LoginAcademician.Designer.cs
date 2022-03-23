@@ -52,7 +52,7 @@ namespace ProjectManagment
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(526, 304);
+            this.btnBack.Location = new System.Drawing.Point(509, 304);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(121, 63);
             this.btnBack.TabIndex = 12;
@@ -63,7 +63,7 @@ namespace ProjectManagment
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLogin.Location = new System.Drawing.Point(290, 304);
+            this.btnLogin.Location = new System.Drawing.Point(279, 304);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(160, 63);
             this.btnLogin.TabIndex = 11;

@@ -11,8 +11,7 @@ namespace BusinessLogicLayer
     {
         public static int Add(EntityAcademician value)
         {
-            if (value.NAME != null && value.DEPARTMAN != null && value.POSITION != null && value.PHONE != null
-                && value.EMAIL != null && value.OFFICE != null && value.TIMETABLE != null)
+            if (true)
             {
                 return FacadeHumanSource.Add(value);
             }
@@ -29,14 +28,11 @@ namespace BusinessLogicLayer
         }
 
         public static bool Delete(int value)
-        {
-            if (value != null)
-            {
-                return FacadeHumanSource.Delete(value);
-            }
-            return false;
+        {            
+            
+              return FacadeHumanSource.Delete(value);         
         }
-        public static List<EntityAcademician> List()
+        public static List<EntityAcademician> Listele()
         {
             return FacadeHumanSource.List();
         }

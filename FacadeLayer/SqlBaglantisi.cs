@@ -10,6 +10,6 @@ namespace FacadeLayer
     public class SqlBaglantisi
     {
         public static SqlConnection baglanti =
-            new SqlConnection(@"Data Source = DESKTOP - O3DVRF8\SQLEXPRESS; Initial Catalog = TBLPROJECTMANAGMENT; Integrated Security = True");
+            new SqlConnection(@"Data Source=DESKTOP-O3DVRF8\SQLEXPRESS;Initial Catalog=TBLPROJECTMANAGMENT;Integrated Security=True");
     }
 }

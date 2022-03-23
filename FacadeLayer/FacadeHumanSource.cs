@@ -12,7 +12,7 @@ namespace FacadeLayer
     {
         public static int Add(EntityAcademician value)
         {
-            SqlCommand command = new SqlCommand("AddInfo", SqlBaglantisi.baglanti);
+            SqlCommand command = new SqlCommand("ACADEMICIANEKLE", SqlBaglantisi.baglanti);
             command.CommandType = CommandType.StoredProcedure;
 
             if (command.Connection.State != ConnectionState.Open)
@@ -22,7 +22,8 @@ namespace FacadeLayer
             command.Parameters.AddWithValue("NAME", value.NAME);
             command.Parameters.AddWithValue("DEPARTMAN", value.DEPARTMAN);
             command.Parameters.AddWithValue("POSITION", value.POSITION);
-            command.Parameters.AddWithValue("EMAİL", value.EMAIL);
+            command.Parameters.AddWithValue("PHONE", value.PHONE);
+            command.Parameters.AddWithValue("EMAIL", value.EMAIL);
             command.Parameters.AddWithValue("OFFICE", value.OFFICE);
             command.Parameters.AddWithValue("TAME_TABLE", value.TIMETABLE);
             return command.ExecuteNonQuery();
@@ -31,7 +32,7 @@ namespace FacadeLayer
 
         public static bool Update(EntityAcademician value)
         {
-            SqlCommand command = new SqlCommand("UpdateInfo", SqlBaglantisi.baglanti);
+            SqlCommand command = new SqlCommand("ACADEMICIANUPDATE", SqlBaglantisi.baglanti);
             command.CommandType = CommandType.StoredProcedure;
 
             if (command.Connection.State != ConnectionState.Open)
@@ -50,7 +51,7 @@ namespace FacadeLayer
 
         public static bool Delete(int value)
         {
-            SqlCommand command = new SqlCommand("DeleteInfo", SqlBaglantisi.baglanti);
+            SqlCommand command = new SqlCommand("ACADEMICIANSIL", SqlBaglantisi.baglanti);
             command.CommandType = CommandType.StoredProcedure;
 
             if (command.Connection.State != ConnectionState.Open)
@@ -66,7 +67,7 @@ namespace FacadeLayer
         {
             List<EntityAcademician> values = new List<EntityAcademician>();
 
-            SqlCommand command = new SqlCommand("UpdateInfo", SqlBaglantisi.baglanti);
+            SqlCommand command = new SqlCommand("ACADEMICIANLISTESI", SqlBaglantisi.baglanti);
             command.CommandType = CommandType.StoredProcedure;
 
             if (command.Connection.State != ConnectionState.Open)
@@ -79,12 +80,13 @@ namespace FacadeLayer
             while (dr.Read())
             {
                 EntityAcademician ent = new EntityAcademician();
-                ent.ID = Convert.ToInt32(dr["ID"]);
+                ent.ID = Convert.ToInt16(dr["ID"]);
                 ent.NAME = dr["NAME"].ToString();
                 ent.DEPARTMAN = dr["DEPARTMAN"].ToString();
                 ent.POSITION = dr["POSITION"].ToString();
                 ent.PHONE = dr["PHONE"].ToString();
                 ent.EMAIL = dr["EMAİL"].ToString();
+                ent.OFFICE = dr["OFFICE"].ToString();
                 ent.TIMETABLE = dr["TAME_TABLE"].ToString();
                 values.Add(ent);
             }
