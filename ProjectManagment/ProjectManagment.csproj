@@ -58,11 +58,29 @@
     <Compile Include="HumanSourceControl.Designer.cs">
       <DependentUpon>HumanSourceControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="LoginAcademician.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="LoginAcademician.Designer.cs">
+      <DependentUpon>LoginAcademician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHumanSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHumanSource.Designer.cs">
+      <DependentUpon>LoginHumanSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginStudent.Designer.cs">
+      <DependentUpon>LoginStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSelect.Designer.cs">
+      <DependentUpon>UserSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +96,17 @@
     <EmbeddedResource Include="HumanSourceControl.resx">
       <DependentUpon>HumanSourceControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="LoginAcademician.resx">
+      <DependentUpon>LoginAcademician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHumanSource.resx">
+      <DependentUpon>LoginHumanSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginStudent.resx">
+      <DependentUpon>LoginStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSelect.resx">
+      <DependentUpon>UserSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,6 +132,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{9640d33d-c3f6-4b03-9b62-db282af3be52}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{f0cad241-9706-43f4-ac22-e5895e08e403}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FacadeLayer\FacadeLayer.csproj">
+      <Project>{65860bd2-f59f-4622-899e-364285f0f0eb}</Project>
+      <Name>FacadeLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
