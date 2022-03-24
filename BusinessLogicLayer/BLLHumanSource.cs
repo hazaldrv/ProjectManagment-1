@@ -15,16 +15,15 @@ namespace BusinessLogicLayer
             {
                 return FacadeHumanSource.Add(value);
             }
-            return -1;
+            
         }
         public static bool Update(EntityAcademician value)
         {
-            if (value.NAME != null && value.DEPARTMAN != null && value.POSITION != null && value.PHONE != null
-               && value.EMAIL != null && value.OFFICE != null && value.TIMETABLE != null)
+            if (true)
             {
                 return FacadeHumanSource.Update(value);
             }
-            return false;
+            
         }
 
         public static bool Delete(int value)

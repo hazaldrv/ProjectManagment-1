@@ -109,7 +109,12 @@ namespace ProjectManagment
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            
+            EntityAcademician ent = new EntityAcademician();
+            ent.ID = Convert.ToInt32(txtID.Text);
+            BLLHumanSource.Delete(ent.ID);
+            MessageBox.Show("Academician information was delete");
+            AcademicianList();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -143,6 +148,23 @@ namespace ProjectManagment
 
         private void textBox1_TextChanged_2(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            EntityAcademician ent = new EntityAcademician();
+            ent.NAME = txtName.Text;
+            ent.DEPARTMAN = txtDepartman.Text;
+            ent.POSITION = txtPosition.Text;
+            ent.PHONE = txtPhone.Text;
+            ent.EMAIL = txtEmail.Text;
+            ent.OFFICE = txtOffice.Text;
+            ent.TIMETABLE = txtTimeTable.Text;
+            BLLHumanSource.Update(ent);
+            MessageBox.Show("Academician information was update");
+            AcademicianList();
+
 
         }
     }

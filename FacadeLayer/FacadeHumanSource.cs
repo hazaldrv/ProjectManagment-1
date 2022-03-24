@@ -42,9 +42,11 @@ namespace FacadeLayer
             command.Parameters.AddWithValue("NAME", value.NAME);
             command.Parameters.AddWithValue("DEPARTMAN", value.DEPARTMAN);
             command.Parameters.AddWithValue("POSITION", value.POSITION);
-            command.Parameters.AddWithValue("EMAİL", value.EMAIL);
+            command.Parameters.AddWithValue("PHONE", value.POSITION);
+            command.Parameters.AddWithValue("EMAIL", value.EMAIL);
             command.Parameters.AddWithValue("OFFICE", value.OFFICE);
-            command.Parameters.AddWithValue("TAME_TABLE", value.TIMETABLE);
+            command.Parameters.AddWithValue("TİME_TABLE", value.TIMETABLE);
+            command.Parameters.AddWithValue("ID", value.ID);
             return command.ExecuteNonQuery() > 0;
 
         }
