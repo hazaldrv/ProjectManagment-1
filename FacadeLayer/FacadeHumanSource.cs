@@ -60,7 +60,7 @@ namespace FacadeLayer
             {
                 command.Connection.Open();
             }
-            command.Parameters.AddWithValue("ID", value);
+            command.Parameters.Remove(value);
             return command.ExecuteNonQuery() > 0;
 
         }
@@ -93,7 +93,7 @@ namespace FacadeLayer
                 values.Add(ent);
             }
             dr.Close();
-            return values;
+            return values ;
         }
     }
 }
