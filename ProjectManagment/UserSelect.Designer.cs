@@ -71,21 +71,19 @@ namespace ProjectManagment
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(232, 129);
+            this.label1.Location = new System.Drawing.Point(191, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(422, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "WELLCOME TO SYSTEM";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // UserSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(973, 608);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(869, 679);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
