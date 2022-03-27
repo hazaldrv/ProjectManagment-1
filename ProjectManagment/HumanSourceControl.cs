@@ -24,7 +24,7 @@ namespace ProjectManagment
         {
             List<EntityAcademician> acalist = BLLHumanSource.Listele();
             dataGridView1.DataSource = acalist;
-            this.Text = "DEPARTMAN";
+            
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -53,13 +53,14 @@ namespace ProjectManagment
 
         private void HumanSourceControl_Load(object sender, EventArgs e)
         {
-            AcademicianList();
+            //AcademicianList();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             EntityAcademician ent = new EntityAcademician();
-            ent.NAME = txtName.Text; ;
+            ent.ID = Convert.ToInt32(txtID.Text);
+            ent.NAME = txtName.Text;
             ent.DEPARTMAN = txtDepartman.Text;
             ent.POSITION = txtPosition.Text;
             ent.PHONE = txtPhone.Text;
@@ -104,7 +105,7 @@ namespace ProjectManagment
 
         private void btnList_Click(object sender, EventArgs e)
         {
-            
+            AcademicianList();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -166,6 +167,20 @@ namespace ProjectManagment
             AcademicianList();
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Calender calender = new Calender();
+            calender.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UserSelect userSelect = new UserSelect();
+            userSelect.Show();
+            this.Hide();
         }
     }
 }

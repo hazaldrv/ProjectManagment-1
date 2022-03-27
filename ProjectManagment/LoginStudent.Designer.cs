@@ -36,13 +36,15 @@ namespace ProjectManagment
             this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(50, 55);
+            this.label3.Location = new System.Drawing.Point(61, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(204, 44);
             this.label3.TabIndex = 20;
@@ -51,7 +53,7 @@ namespace ProjectManagment
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(498, 291);
+            this.btnBack.Location = new System.Drawing.Point(533, 246);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(151, 63);
             this.btnBack.TabIndex = 19;
@@ -62,7 +64,7 @@ namespace ProjectManagment
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLogin.Location = new System.Drawing.Point(281, 291);
+            this.btnLogin.Location = new System.Drawing.Point(316, 246);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(140, 63);
             this.btnLogin.TabIndex = 18;
@@ -73,16 +75,18 @@ namespace ProjectManagment
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPassword.Location = new System.Drawing.Point(281, 237);
+            this.txtPassword.Location = new System.Drawing.Point(316, 192);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(368, 41);
             this.txtPassword.TabIndex = 17;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(52, 243);
+            this.label2.Location = new System.Drawing.Point(87, 198);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(198, 36);
             this.label2.TabIndex = 16;
@@ -91,7 +95,7 @@ namespace ProjectManagment
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUserName.Location = new System.Drawing.Point(281, 183);
+            this.txtUserName.Location = new System.Drawing.Point(316, 138);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(368, 41);
             this.txtUserName.TabIndex = 15;
@@ -100,11 +104,30 @@ namespace ProjectManagment
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(52, 189);
+            this.label1.Location = new System.Drawing.Point(87, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 36);
             this.label1.TabIndex = 14;
             this.label1.Text = "USERNAME: ";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox1.Location = new System.Drawing.Point(690, 198);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(88, 29);
+            this.checkBox1.TabIndex = 21;
+            this.checkBox1.Text = "Show";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(22, 69);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(770, 10);
+            this.progressBar1.TabIndex = 22;
             // 
             // LoginStudent
             // 
@@ -112,6 +135,8 @@ namespace ProjectManagment
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(871, 600);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLogin);
@@ -135,5 +160,7 @@ namespace ProjectManagment
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

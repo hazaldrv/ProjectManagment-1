@@ -19,6 +19,7 @@ namespace ProjectManagment
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.BackColor = SystemColors.Info;
             LoginHumanSource loginHumanSource = new LoginHumanSource();
             loginHumanSource.Show();
             this.Hide();
@@ -26,6 +27,7 @@ namespace ProjectManagment
 
         private void button2_Click(object sender, EventArgs e)
         {
+            button2.BackColor = SystemColors.Info;
             LoginAcademician loginAcademician = new LoginAcademician();
             loginAcademician.Show();
             this.Hide();
@@ -33,6 +35,7 @@ namespace ProjectManagment
 
         private void button3_Click(object sender, EventArgs e)
         {
+            button3.BackColor = SystemColors.Info;
             LoginStudent loginStudent = new LoginStudent();
             loginStudent.Show();
             this.Hide();

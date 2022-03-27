@@ -45,6 +45,10 @@ namespace ProjectManagment
             this.txtTimeTable = new System.Windows.Forms.TextBox();
             this.txtPosition = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +56,7 @@ namespace ProjectManagment
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(193, 77);
+            this.label1.Location = new System.Drawing.Point(226, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 32);
             this.label1.TabIndex = 18;
@@ -61,7 +65,7 @@ namespace ProjectManagment
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtName.Location = new System.Drawing.Point(308, 77);
+            this.txtName.Location = new System.Drawing.Point(341, 118);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(383, 23);
             this.txtName.TabIndex = 19;
@@ -70,7 +74,7 @@ namespace ProjectManagment
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(93, 118);
+            this.label2.Location = new System.Drawing.Point(126, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(209, 32);
             this.label2.TabIndex = 20;
@@ -79,7 +83,7 @@ namespace ProjectManagment
             // txtDepartman
             // 
             this.txtDepartman.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtDepartman.Location = new System.Drawing.Point(308, 118);
+            this.txtDepartman.Location = new System.Drawing.Point(341, 159);
             this.txtDepartman.Name = "txtDepartman";
             this.txtDepartman.Size = new System.Drawing.Size(383, 23);
             this.txtDepartman.TabIndex = 21;
@@ -88,7 +92,7 @@ namespace ProjectManagment
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(137, 153);
+            this.label3.Location = new System.Drawing.Point(170, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 32);
             this.label3.TabIndex = 22;
@@ -97,7 +101,7 @@ namespace ProjectManagment
             // btnList
             // 
             this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnList.Location = new System.Drawing.Point(423, 363);
+            this.btnList.Location = new System.Drawing.Point(341, 404);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(156, 62);
             this.btnList.TabIndex = 35;
@@ -109,7 +113,7 @@ namespace ProjectManagment
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(173, 197);
+            this.label4.Location = new System.Drawing.Point(206, 238);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 32);
             this.label4.TabIndex = 24;
@@ -118,7 +122,7 @@ namespace ProjectManagment
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtPhone.Location = new System.Drawing.Point(308, 206);
+            this.txtPhone.Location = new System.Drawing.Point(341, 247);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(383, 23);
             this.txtPhone.TabIndex = 25;
@@ -127,7 +131,7 @@ namespace ProjectManagment
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(189, 241);
+            this.label5.Location = new System.Drawing.Point(222, 282);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 32);
             this.label5.TabIndex = 26;
@@ -136,7 +140,7 @@ namespace ProjectManagment
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtEmail.Location = new System.Drawing.Point(308, 250);
+            this.txtEmail.Location = new System.Drawing.Point(341, 291);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(383, 23);
             this.txtEmail.TabIndex = 27;
@@ -145,7 +149,7 @@ namespace ProjectManagment
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(170, 292);
+            this.label6.Location = new System.Drawing.Point(203, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 32);
             this.label6.TabIndex = 28;
@@ -154,7 +158,7 @@ namespace ProjectManagment
             // txtOffice
             // 
             this.txtOffice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtOffice.Location = new System.Drawing.Point(308, 292);
+            this.txtOffice.Location = new System.Drawing.Point(341, 333);
             this.txtOffice.Name = "txtOffice";
             this.txtOffice.Size = new System.Drawing.Size(383, 23);
             this.txtOffice.TabIndex = 29;
@@ -163,7 +167,7 @@ namespace ProjectManagment
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(105, 334);
+            this.label7.Location = new System.Drawing.Point(138, 375);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(197, 32);
             this.label7.TabIndex = 30;
@@ -172,15 +176,15 @@ namespace ProjectManagment
             // txtTimeTable
             // 
             this.txtTimeTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtTimeTable.Location = new System.Drawing.Point(308, 334);
+            this.txtTimeTable.Location = new System.Drawing.Point(341, 375);
             this.txtTimeTable.Name = "txtTimeTable";
-            this.txtTimeTable.Size = new System.Drawing.Size(383, 23);
+            this.txtTimeTable.Size = new System.Drawing.Size(236, 23);
             this.txtTimeTable.TabIndex = 31;
             // 
             // txtPosition
             // 
             this.txtPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtPosition.Location = new System.Drawing.Point(308, 162);
+            this.txtPosition.Location = new System.Drawing.Point(341, 203);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(383, 23);
             this.txtPosition.TabIndex = 23;
@@ -188,19 +192,64 @@ namespace ProjectManagment
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 467);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 510);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1043, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1084, 186);
             this.dataGridView1.TabIndex = 36;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(583, 368);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 36);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "Schedule";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(12, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(134, 54);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "BACK";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(200, 30);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(163, 36);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "STUDENT";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(76, 72);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(975, 10);
+            this.progressBar1.TabIndex = 40;
             // 
             // StudentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1102, 656);
+            this.ClientSize = new System.Drawing.Size(1120, 761);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.txtTimeTable);
@@ -243,5 +292,9 @@ namespace ProjectManagment
         private System.Windows.Forms.TextBox txtTimeTable;
         private System.Windows.Forms.TextBox txtPosition;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

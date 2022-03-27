@@ -30,5 +30,24 @@ namespace ProjectManagment
         {
             AcademicianList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Calender calender = new Calender();
+            calender.Show();
+            this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UserSelect userSelect = new UserSelect();
+            userSelect.Show();
+            this.Hide();
+        }
     }
 }

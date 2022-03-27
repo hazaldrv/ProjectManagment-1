@@ -44,5 +44,12 @@ namespace ProjectManagment
         {
             AcademicianList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserSelect userSelect = new UserSelect();
+            userSelect.Show();
+            this.Hide();
+        }
     }
 }
