@@ -19,6 +19,7 @@ namespace FacadeLayer
             {
                 command.Connection.Open();
             }
+            command.Parameters.AddWithValue("ID", value.ID);
             command.Parameters.AddWithValue("NAME", value.NAME);
             command.Parameters.AddWithValue("DEPARTMAN", value.DEPARTMAN);
             command.Parameters.AddWithValue("POSITION", value.POSITION);
@@ -39,14 +40,14 @@ namespace FacadeLayer
             {
                 command.Connection.Open();
             }
+            command.Parameters.AddWithValue("ID", value.ID);
             command.Parameters.AddWithValue("NAME", value.NAME);
             command.Parameters.AddWithValue("DEPARTMAN", value.DEPARTMAN);
             command.Parameters.AddWithValue("POSITION", value.POSITION);
             command.Parameters.AddWithValue("PHONE", value.POSITION);
             command.Parameters.AddWithValue("EMAIL", value.EMAIL);
             command.Parameters.AddWithValue("OFFICE", value.OFFICE);
-            command.Parameters.AddWithValue("TİME_TABLE", value.TIMETABLE);
-            command.Parameters.AddWithValue("ID", value.ID);
+            command.Parameters.AddWithValue("TİME_TABLE", value.TIMETABLE);           
             return command.ExecuteNonQuery() > 0;
 
         }

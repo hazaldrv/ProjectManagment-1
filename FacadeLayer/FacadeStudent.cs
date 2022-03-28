@@ -14,7 +14,7 @@ namespace FacadeLayer
         {
             List<EntityAcademician> values = new List<EntityAcademician>();
 
-            SqlCommand command = new SqlCommand("UpdateInfo", SqlBaglantisi.baglanti);
+            SqlCommand command = new SqlCommand("ACADEMICIANUPDATE", SqlBaglantisi.baglanti);
             command.CommandType = CommandType.StoredProcedure;
 
             if (command.Connection.State != ConnectionState.Open)

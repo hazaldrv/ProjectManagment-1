@@ -155,6 +155,7 @@ namespace ProjectManagment
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             EntityAcademician ent = new EntityAcademician();
+            ent.ID = Convert.ToInt32(txtID.Text);
             ent.NAME = txtName.Text;
             ent.DEPARTMAN = txtDepartman.Text;
             ent.POSITION = txtPosition.Text;
@@ -164,7 +165,7 @@ namespace ProjectManagment
             ent.TIMETABLE = txtTimeTable.Text;
             BLLHumanSource.Update(ent);
             MessageBox.Show("Academician information was update");
-            AcademicianList();
+           // AcademicianList();
 
 
         }
@@ -182,5 +183,10 @@ namespace ProjectManagment
             userSelect.Show();
             this.Hide();
         }
+
+    private void button4_Click(object sender, EventArgs e)
+    {
+      this.Hide();
     }
+  }
 }

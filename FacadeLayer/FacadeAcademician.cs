@@ -13,19 +13,21 @@ namespace FacadeLayer
     {
         public static bool Update(EntityAcademician value)
         {
-            SqlCommand command = new SqlCommand("UpdateInfo", SqlBaglantisi.baglanti);
+            SqlCommand command = new SqlCommand("ACADEMICIANUPDATE", SqlBaglantisi.baglanti);
             command.CommandType = CommandType.StoredProcedure;
 
             if (command.Connection.State != ConnectionState.Open)
             {
                 command.Connection.Open();
             }
+            command.Parameters.AddWithValue("ID", value.ID);
             command.Parameters.AddWithValue("NAME", value.NAME);
             command.Parameters.AddWithValue("DEPARTMAN", value.DEPARTMAN);
             command.Parameters.AddWithValue("POSITION", value.POSITION);
-            command.Parameters.AddWithValue("EMAİL", value.EMAIL);
+            command.Parameters.AddWithValue("PHONE", value.PHONE);
+            command.Parameters.AddWithValue("EMAIL", value.EMAIL);
             command.Parameters.AddWithValue("OFFICE", value.OFFICE);
-            command.Parameters.AddWithValue("TAME_TABLE", value.TIMETABLE);
+            command.Parameters.AddWithValue("TİME_TABLE", value.TIMETABLE);
             return command.ExecuteNonQuery() > 0;
 
         }
@@ -34,7 +36,7 @@ namespace FacadeLayer
         {
             List<EntityAcademician> values = new List<EntityAcademician>();
 
-            SqlCommand command = new SqlCommand("UpdateInfo", SqlBaglantisi.baglanti);
+            SqlCommand command = new SqlCommand("ACADEMICIANLISTESI", SqlBaglantisi.baglanti);
             command.CommandType = CommandType.StoredProcedure;
 
             if (command.Connection.State != ConnectionState.Open)

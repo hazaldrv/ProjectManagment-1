@@ -51,7 +51,7 @@ namespace ProjectManagment
             if (checkBox1.CheckState == CheckState.Checked)
             {
                 txtPassword.UseSystemPasswordChar = true;
-                checkBox1.Text = "Show";
+                checkBox1.Text = "Hide";
             }
             else if (checkBox1.CheckState == CheckState.Unchecked)
             {
@@ -59,5 +59,10 @@ namespace ProjectManagment
                 checkBox1.Text = "Show";
             }
         }
+
+    private void button4_Click(object sender, EventArgs e)
+    {
+      this.Hide();
     }
+  }
 }

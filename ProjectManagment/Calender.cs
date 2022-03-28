@@ -68,9 +68,8 @@ namespace ProjectManagment
 
         private void button44_Click(object sender, EventArgs e)
         {
-            HumanSourceControl humanSourceControl = new HumanSourceControl();
-            humanSourceControl.Show();
-            this.Hide();
+            
+            this.Close();
         }
 
         private void button9_Click(object sender, EventArgs e)

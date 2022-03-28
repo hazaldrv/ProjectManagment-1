@@ -673,7 +673,7 @@ namespace ProjectManagment
             this.button44.Name = "button44";
             this.button44.Size = new System.Drawing.Size(155, 55);
             this.button44.TabIndex = 49;
-            this.button44.Text = "BACK";
+            this.button44.Text = "EXIT";
             this.button44.UseVisualStyleBackColor = false;
             this.button44.Click += new System.EventHandler(this.button44_Click);
             // 

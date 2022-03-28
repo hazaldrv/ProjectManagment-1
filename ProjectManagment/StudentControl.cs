@@ -40,7 +40,15 @@ namespace ProjectManagment
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            txtID.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            txtName.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            txtDepartman.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            txtPosition.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            txtPhone.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
+            txtEmail.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+            txtOffice.Text = dataGridView1.Rows[secilen].Cells[6].Value.ToString();
+            txtTimeTable.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -49,5 +57,15 @@ namespace ProjectManagment
             userSelect.Show();
             this.Hide();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+    private void button4_Click(object sender, EventArgs e)
+    {
+      this.Hide();
     }
+  }
 }

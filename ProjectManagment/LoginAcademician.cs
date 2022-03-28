@@ -49,5 +49,24 @@ namespace ProjectManagment
             }
 
         }
+
+    private void checkBox1_CheckedChanged(object sender, EventArgs e)
+    {
+      if (checkBox1.CheckState == CheckState.Checked)
+      {
+        txtPassword.UseSystemPasswordChar = true;
+        checkBox1.Text = "Hide";
+      }
+      else if (checkBox1.CheckState == CheckState.Unchecked)
+      {
+        txtPassword.UseSystemPasswordChar = false;
+        checkBox1.Text = "Show";
+      }
     }
+
+    private void button4_Click(object sender, EventArgs e)
+    {
+      this.Hide();
+    }
+  }
 }
